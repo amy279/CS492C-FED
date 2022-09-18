@@ -11,8 +11,8 @@ import { Link } from 'react-router-dom';
  * - 각 Arrow에 해당하는 페이지가 존재하지 않으면 이동하지 비활성화되어 있습니다.
  */
 const PaginationArrow = props => {
-    const { currentPagi, currentPage, setCurrentPage, pagePerPagi, symbol, type, enabled, parentComponent } = props;
-    if(enabled === false) return (<td hover={type}><p>{symbol}</p></td>);
+    const { currentPagi, currentPage, setCurrentPage, pagePerPagi, symbol, type, parentComponent } = props;
+//     if(enabled === false) return (<td hover={type}><p>{symbol}</p></td>);
     
     const getGotoPagi = (t) => {
         if(t === 'DoubleLeft') {
